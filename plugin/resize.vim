@@ -87,24 +87,24 @@ endfunction
 function! ResizeUpN(n)
     for i in range(1,a:n)
         call ResizeUp()
-    endif
+    endfor
 endfunction
 
 function! ResizeDownN(n)
     for i in range(1,a:n)
         call ResizeDown()
-    endif
+    endfor
 endfunction
 
 function! ResizeLeftN(n)
     for i in range(1,a:n)
         call ResizeLeft()
-    endif
+    endfor
 endfunction
 
 function! ResizeRightN(n)
     for i in range(1,a:n)
         call ResizeRight()
-    endif
+    endfor
 endfunction
 " }}}
