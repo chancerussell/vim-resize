@@ -83,6 +83,32 @@ function! ResizeRight()
 endfunction
 " }}}
 
+"Resize<direction>(increment) functions ----------- {{{
+function! ResizeUpN(n)
+    for i in range(1,a:n)
+        call ResizeUp()
+    endif
+endfunction
+
+function! ResizeDownN(n)
+    for i in range(1,a:n)
+        call ResizeDown()
+    endif
+endfunction
+
+function! ResizeLeftN(n)
+    for i in range(1,a:n)
+        call ResizeLeft()
+    endif
+endfunction
+
+function! ResizeRightN(n)
+    for i in range(1,a:n)
+        call ResizeRight()
+    endif
+endfunction
+" }}}
+
 nnoremap <up> :call ResizeUp()<cr>
 nnoremap <down> :call ResizeDown()<cr>
 nnoremap <left> :call ResizeLeft()<cr>
