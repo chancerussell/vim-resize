@@ -108,8 +108,3 @@ function! ResizeRightN(n)
     endif
 endfunction
 " }}}
-
-nnoremap <up> :call ResizeUp()<cr>
-nnoremap <down> :call ResizeDown()<cr>
-nnoremap <left> :call ResizeLeft()<cr>
-nnoremap <right> :call ResizeRight()<cr>
